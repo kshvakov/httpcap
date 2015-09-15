@@ -136,9 +136,7 @@ func inCodes(code []byte) bool {
 		return true
 	}
 
-	codes := strings.Fields(*responseCodes)
-
-	for _, c := range codes {
+	for _, c := range printResponseCodes {
 
 		if c[0] == code[0] && c[1] == code[1] {
 
